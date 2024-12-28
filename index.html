@@ -1,43 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashu Boris Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-
-</head>
-<body onload="hidePreloader()">
-  <div id="preloader">
-    <div class="loader">
-      <h1>Ashu Boris</h1>
-      <p>UI/UX Designer • Graphic Designer • Video Editor • Web Designer</p>
-      <div class="progress-bar">
-        <div class="progress"></div>
-      </div>
-      <div class="skills">
-        <div class="skill">
-          <div class="skill-icon">🎨</div>
-          <span class="skill-label">Design</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashu Boris Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add GSAP script since it's used in main.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader">
+        <h1>Ashu Boris</h1>
+        <p>UI/UX Designer • Graphic Designer • Video Editor • Web Designer</p>
+        <div class="progress-bar">
+          <div class="progress"></div>
         </div>
-        <div class="skill">
-          <div class="skill-icon">💻</div>
-          <span class="skill-label">Development</span>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">📹</div>
-          <span class="skill-label">Video</span>
-        </div>
-        <div class="skill">
-          <div class="skill-icon">🌐</div>
-          <span class="skill-label">Web</span>
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-icon">🎨</div>
+            <span class="skill-label">UI-UX</span>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">💻</div>
+            <span class="skill-label">Development</span>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">📹</div>
+            <span class="skill-label">Video</span>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">🌐</div>
+            <span class="skill-label">Web</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="main-content">
-    <!-- Your main content goes here -->
-  </div>
-  <script src="main.js"> </script>
-</body>
+    <div id="main-content">
+      <nav>
+        <div class="nav-logo">AB</div>
+        <div class="nav-links">
+          <a href="#portfolio">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="cta-button">Let's Talk</button>
+      </nav>
+
+      <section class="hero">
+        <h1 class="hero-title">
+          Crafting digital <em>experiences</em><br />
+          that make an impact
+        </h1>
+
+        <div class="cards-container">
+          <div class="card stat-card">
+            <span>Projects</span>
+            <div class="stats">7+</div>
+            <div class="join-button">
+              View Work
+              <span class="cursor">↗</span>
+            </div>
+          </div>
+          <div class="card stat-card">
+            <span>Experience</span>
+            <div class="stats">8 yrs</div>
+            <div class="avatar-group">
+              <div class="avatar"></div>
+              <div class="avatar"></div>
+              <div class="avatar"></div>
+            </div>
+          </div>
+          <div class="card stat-card">
+            <span>Services</span>
+            <div class="stats">UI/UX</div>
+            <div class="join-button">
+              Learn More
+              <span class="cursor">↗</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section" id="portfolio">
+        <h2 class="work-title">Work</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <img src="project1.jpg" alt="Project 1" loading="lazy" />
+            <div class="project-info">
+              <h3>Project 1</h3>
+              <p>Web Design for Client A</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="project2.jpg" alt="Project 2" loading="lazy" />
+            <div class="project-info">
+              <h3>Project 2</h3>
+              <p>UI/UX Design for Client B</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="project3.jpg" alt="Project 3" loading="lazy" />
+            <div class="project-info">
+              <h3>Project 3</h3>
+              <p>Graphic Design for Client C</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="project4.jpg" alt="Project 4" loading="lazy" />
+            <div class="project-info">
+              <h3>Project 4</h3>
+              <p>Video Editing for Client D</p>
+            </div>
+          </div>
+        </div>
+        <div class="more-projects">
+          <a href="#" class="more-projects-link">More Projects →</a>
+        </div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
